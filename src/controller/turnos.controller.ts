@@ -15,17 +15,17 @@ export const postTurnos = async (req: Request, res: Response) => {
         const parametros: IParametro[] = [
             {
                 nombre: 'fechaInicio',
-                tipo: sql.Float,
+                tipo: sql.VarChar,
                 valor: fechaInicial
             },
             {
                 nombre: 'fechaFin',
-                tipo: sql.Float,
+                tipo: sql.VarChar,
                 valor: fechaFinal
             },
             {
                 nombre: 'idServicio',
-                tipo: sql.Float,
+                tipo: sql.Int,
                 valor: servicio
             }
         ];
